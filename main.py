@@ -5,6 +5,7 @@ from fastapi.templating import Jinja2Templates
 from storage import database as db
 from fastapi.responses import RedirectResponse
 
+
 app = FastAPI()
 templates = Jinja2Templates(directory='templates')
 
