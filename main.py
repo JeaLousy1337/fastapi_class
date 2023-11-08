@@ -2,15 +2,11 @@ from datetime import datetime
 from fastapi import FastAPI, Request, status, Form
 from pydantic import BaseModel
 from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
 from storage import database as db
 from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 templates = Jinja2Templates(directory='templates')
-
-
-app.mount('/static', StaticFiles(directory='static'), name='static')
 
 
 class NewBook(BaseModel):
