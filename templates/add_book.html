@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div id="styllo">
+    <h1>{{ title }}</h1>
+</div>
+
+<form method="post" action="/add-book" id="stil">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text"  name="title" class="form-control" id="title">
+  </div>
+
+  <div class="mb-3">
+    <label for="author" class="form-label">author</label>
+    <input type="text"  name="author" class="form-control" id="author">
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">description</label>
+    <input type="text"  name="description" class="form-control" id="description">
+  </div>
+
+  <div class="mb-3">
+    <label for="cover" class="form-label">cover</label>
+    <input type="url"  name="cover" class="form-control" id="cover">
+  </div>
+
+
+  <style>
+    #stil{
+    margin-left: 20px;
+    margin_top: 20px;
+    }
+    #styllo{
+    margin-left: 20px;
+    margin_top: 20px;
+    }
+  </style>
+
+  <button type="submit" class="btn btn-primary">Add story</button>
+</form>
+
+{% endblock %}

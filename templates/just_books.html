@@ -1,0 +1,19 @@
+<div id="syl">
+    {% for book in books%}
+
+        <h3 id="ssyl_777">Title: {{ book.title }}</h3>
+        <h4>Description: {{ book.description }}</h4>
+        <img src="{{ book.cover }}" alt="" width="200" height="200">
+        <h4>Author: {{ book.author }}</h4>
+        <p>Published: {{ book.created_at }}</p>
+        <hr style="border-color: red;">
+    {% endfor%}
+</div>
+<style>
+    #syl{
+    margin:0 28px 0 28px;;
+    }
+    #ssyl_777{
+    margin-top: 15px;
+    }
+</style>
