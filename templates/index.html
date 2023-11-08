@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<h1 id="titstyle"> {{ title }} {{ unicode }} </h1>
+<img src="https://img1.akspic.ru/previews/7/1/8/3/7/173817/173817-priroda-alpy-sammit-gora-pejzazhi_gor-550x310.jpg" id="syimg">
+{% include "just_books.html" %}
+<style>
+    #titstyle{
+    margin-left: 15px;
+    margin-top: 15px;
+    }
+    #syimg{
+    margin-left: 15px;
+    margin-top: 15px;
+    }
+</style>
+
+{% endblock %}
